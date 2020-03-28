@@ -40,7 +40,7 @@ export default {
       this.myreceive(this.token2)
     },
     myreceive(token) {
-      var arr = this.dataAll.appSubjectTempVos[3].itemList
+      var arr = this.dataAll.appSubjectTempVos[2].itemList
       // var arr0 = this.dataAll.appSubjectTempVos[4].itemList
       // if (arr0 && arr) {
       //   arr = arr.concat(arr0)
