@@ -1,5 +1,5 @@
 export default function(fn, timeWait=1000) {
-  console.log('发抖开始啦')
+  console.log('防抖开始啦')
   return function() {
     let args = [].slice.call(arguments)
 

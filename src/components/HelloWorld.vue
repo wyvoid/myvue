@@ -23,8 +23,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      token: 'eec2efc4-95e1-4a1c-9df0-59ede963e759',
-      token2: 'f8fe86c1-b655-4a9d-9d0b-2db6ca71a7ee',
+      token: '30ec14c9-7c34-4d5a-8bcc-c63844a87a4b',  // 2789
+      token2: 'c40ee4eb-92cd-44f8-b005-8315a60340d2', // 4988
       dataAll: {
         appSubjectTempVos: []
       },
@@ -45,6 +45,7 @@ export default {
       // if (arr0 && arr) {
       //   arr = arr.concat(arr0)
       // }
+      debugger
       if (!arr) return
       let inter = setInterval(()=> {
         arr.forEach((item, index) => {
@@ -53,9 +54,9 @@ export default {
         })
       }, 10)
       this.intervalArr.push(inter)
-      console.log('push an inter:'+inter)
+      console.log('push an inter------------------------------:'+inter)
       let tout = setTimeout(() => {
-        console.log('clear an inter:'+inter)
+        console.log('clear an inter------------------------------:'+inter)
         clearInterval(inter)
         clearTimeout(tout)
       }, 10000)
@@ -70,7 +71,7 @@ export default {
       let params = {
         token: token || this.token,
       }
-      this.$http.get('/social/subject/topic/temp/search/two/fFumkAvuexSOHWLBXbVs', params).then(res=> {
+      this.$http.get('/social/subject/topic/temp/search/two/uVFleYFHDfhUHJqasuga', params).then(res=> {
         this.dataAll = res.data
       })
     },
